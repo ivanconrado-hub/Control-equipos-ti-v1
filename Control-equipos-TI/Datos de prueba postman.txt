@@ -1,0 +1,37 @@
+/*========= DATOS DE PRUEBA PARA POSTMAN =================*/
+
+/*********PRUEBA DE REGISTRO DE USUARIO *****************/
+
+URL:http://localhost:3000/api/usuarios
+Método HTTP: POST
+Headers: Content-Type: application/json
+Cuerpo de la Petición (Body JSON):
+
+{
+  "nombre": "Usuario Suproindustrial",
+  "email": "user@suproindustrial.com",
+  "password": "password123",
+  "id_rol": 3,
+  "estado": "activo"
+}
+
+/*********PRUEBA DE LOGIN DE USUARIO *******************/
+
+URL: http://localhost:3000/api/auth/login
+Método HTTP: POST
+Headers: Content-Type: application/json
+Cuerpo de la Petición (Body JSON):
+
+/*********PRUEBA DE LOGIN DE USUARIO (DATOS ERRADOS) *****/
+
+{
+  "correo": "user@suproindustrial.com",
+  "clave": "clave_equivocada"
+}
+
+/*********PRUEBA DE LOGIN DE USUARIO (DATOS CORRECTOS) *****/
+
+{
+  "correo": "user@suproindustrial.com",
+  "clave": "password123"
+}
